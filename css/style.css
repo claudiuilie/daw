@@ -1,0 +1,558 @@
+
+.header {
+	width:70%;
+	margin-left:15%;
+	margin-right:15%;
+	margin-top:5%;
+}
+.header img {
+	width:100%;
+}
+.container {
+	width:90%;
+	margin-left:5%;
+	margin-right:5%;
+	border:solid 2px silver;
+	border-radius:8px;
+	box-shadow:2px 2px 2px 0px;
+	height:700px;
+	position:relative;
+}
+.meniu {
+	width:100%;
+	border-radius:8px;
+	background:linear-gradient(to right,rgb(52, 143, 55),rgb(40, 177, 45),rgb(52, 143, 55));
+}
+.meniu ul {
+	border-bottom:solid 2px silver;
+	margin-top:0px;
+	padding-bottom:10px;
+	padding-top:10px;
+}
+.meniu ul li {
+display:inline;
+margin-left:10%;
+padding-right:10%;
+border-right:2px solid white;
+}
+.meniu ul li a {
+	width:100%;
+	font-size:20px;
+	color:white;
+	transition: all linear 0.4s;
+	text-decoration:none;
+	text-shadow:2px 2px black;
+}
+.meniu ul li a:hover {
+	background-color:rgb(21, 100, 24);
+	border-radius:8px;
+}
+
+#meniu_footer {
+	text-align: center;
+}
+
+#meniu_footer ul li {
+	display:inline;
+	margin-left:5%;
+	padding-right:5%;
+	border-right:2px solid white;
+}
+
+.footer {
+	width:100%;
+	color:white;
+	border-top:2px solid silver;
+	background:linear-gradient(rgb(52, 143, 55),rgb(40, 177, 45));
+	position: absolute;
+	bottom: 0;
+	text-align: center;
+}
+.footer p {
+	margin-left:2%;
+	text-shadow:4px 4px silver;
+}
+#autor {
+	font-size:22px;
+	margin-left:0px;
+	text-align:center;
+	padding-bottom:1%;
+}
+
+/* Slider stuff in css */
+@import url(http://fonts.googleapis.com/css?family=Istok+Web);
+@keyframes slidy {
+0% { left: 0%; }
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -200%; }
+70% { left: -200%; }
+75% { left: -300%; }
+95% { left: -300%; }
+100% { left: -400%; }
+}
+
+/* Responsive stuff */
+@media only screen and (max-width: 1570px){
+	.meniu ul li {
+		margin-left:9%;
+		padding-right:9%;
+	}
+}
+@media only screen and (max-width:1150px){
+	.meniu ul li {
+		margin-left:8%;
+		padding-right:8%;
+	}
+}
+@media only screen and (max-width: 910px){
+	.meniu ul li {
+		margin-left:7%;
+		padding-right:7%;
+	}
+}
+@media only screen and (max-width: 765px){
+	.menius {
+		width:100%;
+	}
+	.meniu ul li {
+		margin-left:35%;
+		padding-right:35%;
+		border:none;
+	}
+}
+/* laborator 1 - 3 */
+html, body {margin:0; padding:0; font-family: Arial, Helvetica, sans-serif; font-size:13px; line-height:22px; color:#6B6B6B; min-width:1050px; }
+
+h1 {margin:0 0 5px 0; padding:0; font-size:24px; color:#000; text-transform:uppercase; font-weight:normal; text-shadow: 2px 2px #EDEDED;}
+h1 span { text-transform:lowercase;}
+h2 {margin:0 0 5px 0; padding:0; font-size:18px; color:#333; font-weight:normal;}
+h3 {margin:0; padding:0; font-size:16px; color:rgb(255, 255, 255); font-weight:normal;}
+h3 span {font-size:12px;color:#888}
+h4 {margin:0; padding:0; font-size:13px; color:#333; font-weight:bold;}
+
+
+fieldset {
+	border:1px solid silver;padding: 10px;
+}
+.pret_intreg {clear:both; font-size:13px; float:right; color:#999}
+.pret_redus {clear:both; font-size:24px; float:right; color:#000}
+.pret_normal {clear:both; font-size:14px; float:right; color:#999; text-decoration: line-through;}
+.pret_redus {clear:both; font-size:24px; float:right; color:#000}
+.pret_redus span {font-size:16px;}
+span.number { font-size:24px; }
+span.decimal { font-size:14px; }
+span.currency { font-size:14px; }
+
+.active {
+    outline:none;
+    border-color:rgb(105, 238, 143);
+	background-color:darkgray;
+    box-shadow:0 0 10px rgb(95, 240, 136);
+}
+
+.col_stanga {
+    float: left;
+    width: 15%;
+    height: 84%;
+    text-align: center;
+    left: 10px;
+    background: #eee;
+    overflow-x: hidden;
+    padding: 8px 0;
+    position: absolute;
+}
+
+.col_stanga ul {
+	list-style-type: none;
+	text-align: center;
+	padding: 0%;
+}
+.col_stanga a {
+	padding: 6px 8px 6px 6px;
+	text-decoration: none;
+	font-size: 18px;
+	color: rgb(73, 102, 81);
+	display: block;
+}
+
+.col_stanga a:hover {
+	color: rgb(172, 211, 183);
+}
+
+.col_dreapta {
+	margin-top: 10px;
+	float:right; 
+	width:85%;
+}
+
+.laborator {
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+.conainer_produse {
+	width: 100%;
+	height: 100%;
+	overflow:hidden;
+	text-align:center;
+}
+
+a.buton_despre {background-color: #000; width:100px; height:25px; color:#FFF; display: block; font-size:13px; text-align:center; margin:33px 0; float:left; box-shadow:2px 2px 5px #999999;}
+a.buton_despre span {display: block; padding:1px 0 0 0;}
+a.buton_despre:hover {background-color:#BBB; color:#FFF; outline: none; font-weight:bold}
+.buton_adauga_produs {
+	background-color: #4CAF50;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+
+.buton_adauga_produs:hover {
+	background-color: #008607;
+}
+
+
+.produs_home {
+	display:inline-block;
+	width:220px;
+	text-align:center;
+	border:1px solid #BBB
+	
+}
+.produs_home:hover {border:1px solid #000}
+span.negru {color:#000; font-weight:bold}
+
+.star_putere {position:absolute; width:50px; height:50px; display:block; bottom:10px; right:5px; background:url('../imagini/stea_putere.png'); text-align:center}
+.star_putere_promo {position:absolute; width:50px; height:50px; display:block; bottom:10px; right:5px; background:url('../imagini/stea_putere.png'); text-align:center}
+
+.discount {position:absolute; display:block; top:0px; right:20px; width:35px; height:30px; background:url('../imagini/discount.png'); padding:0; color:#FFF; font-size:15px}
+.discount span {font-size:12px}
+
+.tabel_specificatii,#tabel_cos {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+.tabel_specificatii td, th, #tabel_cos td, th  {
+	border: 1px solid #dddddd;
+	text-align: left;
+	padding: 5px;
+  }
+
+
+/* laborator 3 */
+
+.container_contact {
+	border-radius: 5px;
+	background-color: #f2f2f2;
+	padding: 10px;
+  }
+
+.container_contact input[type=text],input[type=email], select, textarea {
+	width: 100%; 
+	padding: 5px; 
+	border: 1px solid #ccc; 
+	border-radius: 4px; 
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: none
+  }
+  
+.container_contact input[type=submit], #buton_calculeaza_cos {
+	background-color: #4CAF50;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+  }
+  
+
+.container_contact input[type=submit]:hover,#buton_calculeaza_cos:hover {
+	background-color: #45a049;
+  }
+
+
+  /* laborator 4  + laborator 1 (meniu contact)*/
+
+.meniu_contact ul{
+	list-style-type: none;
+	padding: 0;
+	overflow: hidden;
+	top: 0;
+	width: 100%;
+}
+
+.meniu_contact li a {
+	display: block;
+	font-size: 17px;
+	font-weight: bold;
+	padding: 6px 8px;
+	text-decoration: none;
+	color: rgb(87, 148, 83);
+}
+
+
+.meniu_frame, .meniu_contact{
+	width: 100%;
+	text-align: center;
+	padding: 0%;
+}
+
+.meniu_frame ul{
+	list-style-type: none;
+	padding: 0;
+	overflow: hidden;
+	background-color:rgb(107, 192, 121);
+	top: 0;
+	width: 100%;
+}
+
+.meniu_contact a:hover{
+	background-color:rgb(84, 138, 84);
+	color:white;
+	font-size: 20px;
+}
+
+.meniu_frame ul li,  .meniu_contact ul li{
+    padding: 0%;
+    display: inline-block;
+}
+
+
+.meniu_frame li a {
+	display: block;
+	font-size: 17px;
+	font-weight: bold;
+	padding: 14px 16px;
+	text-decoration: none;
+	color: rgb(255, 255, 255);
+	text-shadow:1.5px 1.5px black;
+}
+
+.meniu_frame a:hover {
+	color: darkgreen;
+	text-shadow:1.5px 1.5px white;
+}
+
+.meniu_frame a:active {
+    background-color:forestgreen;
+    color:white;
+}
+
+#informatii_frame {
+	height: 460px;
+}
+
+/* laborator 5 */
+
+.tabel_lab_5 {
+	background-image: url('../imagini/led.jpg');
+	background-size: 350px 350px;
+	color: yellowgreen;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-size: 15px;
+	font-style: italic;
+	word-spacing: 5px;
+}
+
+.tabel_lab_5 th {
+	text-transform: uppercase;
+}
+
+#laborator5 {
+	height:500px;
+	background-color: rgba(191, 250, 164, 0.384);
+}
+
+#laborator5 legend {
+	font-size: 18px;
+	color:  rgba(11, 34, 0, 0.822);
+}
+
+#laborator5 .pret_intreg {
+	text-decoration: line-through;
+}
+
+/* laborator 6 */
+
+
+
+#lab6_fieldset {
+	border-radius:25px;
+	border: 20px solid transparent;
+	padding: 10px;
+	border-image: url('../imagini/led_border.png') 15 round;
+}
+
+.lab6_shadow{
+	background-color:  rgba(83, 224, 64, 0.151);
+	box-shadow: 10px 10px 5px #888888;
+}
+
+#laborator6 .pret_redus {
+	animation-name: animatie_pret;
+	animation-duration: 0.5s;
+	animation-iteration-count: 150;
+}
+
+@keyframes animatie_pret {
+	0%   {
+		color:rgba(252, 124, 124, 0.658);
+		font-size: 20px;
+	}
+	25%  {
+		color:rgba(252, 67, 67, 0.658);
+		font-size: 22.5px;
+	}
+	50%  {
+		color: rgb(255, 0, 0);
+		font-size: 25px;
+	}
+	75%  {
+		color:rgba(252, 67, 67, 0.658);
+		font-size: 22.5px;
+	}
+	100% {
+		color:rgba(252, 124, 124, 0.658);
+		font-size: 20px;
+	}
+  }
+
+#lab6_fieldset {
+	position: relative;
+	animation-name: animatie_specs;
+	animation-duration: 1s;
+}
+
+.lab6_shadow {
+	position: relative;
+	animation-name: animatie_contact;
+	animation-duration: 1s;
+}
+
+.lab6_formular_comanda {
+	position: relative;
+	animation-name: animatie_formular_comanda;
+	animation-duration: 1s;
+}
+
+.lab6_imagini_prod {
+	position: relative;
+	animation-name: animatie_imagine_prod;
+	animation-duration: 1s;
+}
+
+@keyframes animatie_specs {
+	0%   {right:1000px; top:0px;}
+	100%  {right:0px; top:0px;}
+}
+
+@keyframes animatie_contact {
+	0%   {left:0px; top:1000px;}
+	100%  {left:0px; top:0px;}
+}
+
+@keyframes animatie_imagine_prod {
+	0%   {left:0px; bottom:1000px;}
+	100%  {left:0px; bottom:0px;}
+}
+
+@keyframes animatie_formular_comanda {
+	0%   {left:1000px; top:0px;}
+	100%  {left:0px; top:0px;}
+}
+
+
+/* laborator 7 - 8 */
+
+.continut_oferta, #container_butoane_cos {
+	width: 100%;
+	display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+	align-items: center;
+	margin-top: 20%;
+}
+
+#container_butoane_cos {
+	margin-top:5%;
+}
+
+#buton_sterge_cos {
+	background-color: rgb(255, 21, 21);
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+  }
+  
+
+#buton_sterge_cos:hover {
+	background-color: #ff0000a1;
+  }
+
+
+#container_butoane_cos button {
+	padding: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+#countdown_dashboard {
+	height: 110px;
+}
+
+.dash {
+	width: 110px;
+	height: 114px;
+	float: left;
+	margin-left: 20px;
+	position: relative;
+}
+
+.dash .digit {
+	font-size: 55pt;
+	font-weight: bold;
+	float: left;
+	width: 55px;
+    line-height: 1.3;
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #555;
+	position: relative;
+}
+
+.dash_title {
+	position: absolute;
+	display: block;
+	bottom: 0px;
+	right: 6px;
+	font-size: 9pt;
+	color: #555;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+
+/* badge cos cumparaturi */
+.produse_badge{
+	background-color:rgb(0, 136, 68);
+	color:#fff;
+	display:inline-block;
+	padding-left:8px;
+	padding-right:8px;
+	margin-left:110px;
+	text-align:center;
+	border-radius:50%;
+	float:right;
+	position: absolute;
+}

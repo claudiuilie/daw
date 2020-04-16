@@ -1,0 +1,105 @@
+<!-- // 1 main page - > de produse redirectionare catre 2(info produs)
+// 2 info produs -> (contine tabel cu specificatii si poza )
+// 3 formular de logare ()
+// 4 frames - > harta site
+// 5 main page + css
+// 6  main page + css3
+// 7 javascript
+// 8 javascript advanced
+// 9 - 10 php 
+// 11 - 12 php + mysql -->
+
+
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Formular</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+
+<body>
+    <div class="continut">
+        <div style="float:left; width:160px; height:110px; text-align:center; ">
+            <div style="font-size:32px; line-height:32px; color:#CC0000">OFERTA SPECIALA!</div>
+            <div style="margin:10px 0 0 0; font-size:22px;">au mai ramas:</div>
+        </div>
+        <!-- Countdown dashboard start -->
+        <div id="countdown_dashboard" style="float:left; width:530px;">
+
+            <div class="dash days_dash">
+                <span class="dash_title">zile</span>
+                <div class="digit">
+                    <div class="top" style="display: none;">0</div>
+                    <div class="bottom" style="display: block;">0</div>
+                </div>
+                <div class="digit">
+                    <div class="top" style="display: none;">3</div>
+                    <div class="bottom" style="display: block;">3</div>
+                </div>
+            </div>
+
+            <div class="dash hours_dash">
+                <span class="dash_title">ore</span>
+                <div class="digit">
+                    <div class="top" style="display: none;">1</div>
+                    <div class="bottom" style="display: block;">1</div>
+                </div>
+                <div class="digit">
+                    <div class="top" style="display: none;">1</div>
+                    <div class="bottom" style="display: block;">1</div>
+                </div>
+            </div>
+
+            <div class="dash minutes_dash">
+                <span class="dash_title">minute</span>
+                <div class="digit">
+                    <div class="top" style="display: none;">4</div>
+                    <div class="bottom" style="display: block;">4</div>
+                </div>
+                <div class="digit">
+                    <div class="top" style="display: none;">7</div>
+                    <div class="bottom" style="display: block;">7</div>
+                </div>
+            </div>
+
+            <div class="dash seconds_dash">
+                <span class="dash_title">secunde</span>
+                <div class="digit">
+                    <div class="top" style="display: none;">1</div>
+                    <div class="bottom" style="display: block;">1</div>
+                </div>
+                <div class="digit">
+                    <div class="top"
+                        style="display: block; overflow: hidden; height: 59.1513px; padding-top: 0px; margin-top: 0px; padding-bottom: 0px; margin-bottom: 0px;">
+                        4</div>
+                    <div class="bottom" style="display: block; overflow: hidden; height: 36.2301px;">5</div>
+                </div>
+            </div>
+
+        </div>
+        <!-- Countdown dashboard end -->
+
+        <script language="javascript" type="text/javascript">
+            jQuery(document).ready(function () {
+                $('#countdown_dashboard').countDown({
+                    targetDate: {
+                        'day': 20,
+                        'month': 4,
+                        'year': 2020,
+                        'hour': 0,
+                        'min': 0,
+                        'sec': 0
+                    },
+                    omitWeeks: true
+                });
+            });
+        </script>
+        <div class="c"></div>
+    </div>
+</body>
+
+</html>

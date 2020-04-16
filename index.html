@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+
+<head>
+	<title>Ilie Claudiu Teofil</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+	<div class="header">
+		<p id="autor">
+			<center>
+				<h1>
+					<font color="silver">Ilie Claudiu (MAGAZIN PRODUSE LED) </font>
+				</h1>
+			</center>
+		</p>
+	</div>
+
+	<div class="container">
+		<div class="meniu">
+			<!-- NavBar -->
+			<ul>
+				<li><a href="#" onclick="schimbaLab('laborator1','meniu_laborator1')">Home</a></li>
+				<li><a href="Laboratorul 9\a.php">Date</a></li>
+				<li><a href="Laboratorul 10\introducere.html">Form</a></li>
+				<li style="border-right:none;"><a href="https://www.google.ro/">Google</a></li>
+			</ul>
+		</div>
+		<!-- coloana stanga -->
+		<div class="col_stanga">
+			<!-- meniu laboratoare-->
+			<div>
+				<h2>Laboratoare: </h2>
+				<ul id="meniu_laboratoare">
+					<li id="meniu_laborator1" class="active"><a href='#'
+							onclick="schimbaLab('laborator1','meniu_laborator1')">Laboratorul 1</a></li>
+					<li id="meniu_laborator2"><a href='#'
+							onclick="schimbaLab('laborator2', 'meniu_laborator2')">Laboratorul 2</a></li>
+					<li id="meniu_laborator3"><a href='#'
+							onclick="schimbaLab('laborator3', 'meniu_laborator3')">Laboratorul 3</a></li>
+					<li id="meniu_laborator4"><a href='#'
+							onclick="schimbaLab('laborator4', 'meniu_laborator4')">Laboratorul 4</a></li>
+					<li id="meniu_laborator5"><a href='#'
+							onclick="schimbaLab('laborator5', 'meniu_laborator5')">Laboratorul 5</a></li>
+					<li id="meniu_laborator6"><a href='#'
+							onclick="schimbaLab('laborator6', 'meniu_laborator6')">Laboratorul 6</a></li>
+					<li id="meniu_laborator7"><a href='#'
+							onclick="schimbaLab('laborator7', 'meniu_laborator7')">Laboratorul 7</a></li>
+					<li id="meniu_laborator8"><a href='#'
+							onclick="schimbaLab('laborator8', 'meniu_laborator8');">Laboratorul 8</a></li>
+					<li id="meniu_laborator9"><a href='#'
+							onclick="schimbaLab('laborator9', 'meniu_laborator9')">Laboratorul 9</a></li>
+					<li id="meniu_laborator10"><a href='#'
+							onclick="schimbaLab('laborator10', 'meniu_laborator10')">Laboratorul 10</a></li>
+					<li id="meniu_laborator11"><a href='#'
+							onclick="schimbaLab('laborator11', 'meniu_laborator11')">Laboratorul 11</a></li>
+					<li id="meniu_laborator12"><a href='#'
+							onclick="schimbaLab('laborator12', 'meniu_laborator12')">Laboratorul 12</a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- coloana dreapta -->
+		<div class="col_dreapta">
+
+			<div style=" height:40px; margin-right: 50px;margin-left:50px;margin-bottom: 10px;">
+				<a href="#" onclick="schimbaLab('laborator7', 'meniu_laborator7')" title="consulta cosul tau de produse" style="height:40px;">
+					<div style="float:right; width:112px; margin:4px 0 0 10px">
+						<span id="badge_produse_cos" class="produse_badge">0</span>
+						<img src="imagini/cos.png"alt="cos de produse">
+						</div>
+				</a>
+				<a href="#" title="consulta cosul tau de produse" style="height:40px;"
+				onclick="schimbaLab('laborator1','meniu_laborator1')">
+					<div style="float:left; width:112px; margin:4px 0 0 10px">
+						<img src="imagini/home.png"alt="cos de produse"></div>
+				</a>
+			</div>
+
+			<hr style="border:0; height:1px; background:#CCC;margin-right: 50px;margin-left: 50px;">
+
+			<!-- Laborator 1 -->
+			<div class="laborator" id="laborator1">
+
+				<img src="imagini/banner.png" alt="Banner" style="width:100%">
+				<div class="conainer_produse">
+					<!-- Produs 1 -->
+					<div class="produs_home">
+						<br>
+						<a href="#" title="detalii Lustra LED" style="position:relative; display:block"
+							onclick="schimbaLab('laborator2','meniu_laborator2')">
+							<img src="imagini/produse/lustra.jpg" class="poza_produs" alt="">
+							<div class="discount">-17<span>%</span></div>
+							<div class="star_putere_promo">
+								<div style="margin:14px auto; font-size:22px; color:#FFF">200w</div>
+							</div>
+						</a>
+						<h4>Lustra LED</h4>
+						220V <span class="negru">&nbsp;/&nbsp;</span>
+						200 W <span class="negru">&nbsp;/&nbsp;</span>
+						13000 lm
+						<a class="buton_despre" href="#" title="detalii Lustra LED" style="background-color:#CC0000"
+							onclick="schimbaLab('laborator2','meniu_laborator2')">
+							<span>detalii produs</span>
+						</a>
+						<div style="float:right; margin:15px 5px 0 0; ">
+							<div class="pret_intreg">720,99 lei</div>
+							<div class="pret_redus" title="pret CU tva" style="color:#CC0000">616.23 lei</div>
+						</div>
+					</div>
+					<div style="float:left; width:12px; height:1px"></div>
+					<!-- Produs 2 -->
+					<div class="produs_home">
+						<br>
+						<a href="#" title="detalii Bec LED " style="position:relative; display:block"
+							onclick="schimbaLab('laborator5','meniu_laborator5')">
+							<img src="imagini/produse/bec.jpg" class="poza_produs" alt="">
+							<div class="discount">-31<span>%</span></div>
+							<div class="star_putere_promo">
+								<div style="margin:14px auto; font-size:22px; color:#FFF">12w</div>
+							</div>
+						</a>
+						<h4>Bec LED</h4>
+						220V <span class="negru">&nbsp;/&nbsp;</span>
+						12 W <span class="negru">&nbsp;/&nbsp;</span>
+						1200 lm
+						<a class="buton_despre" href="#" title="detalii Bec LED " style="background-color:#CC0000"
+							onclick="schimbaLab('laborator5','meniu_laborator5')">
+							<span>detalii produs</span>
+						</a>
+						<div style="float:right; margin:15px 5px 0 0; ">
+							<div class="pret_intreg">34.25 lei</div>
+							<div class="pret_redus" title="pret CU tva" style="color:#CC0000">26,15 lei</div>
+						</div>
+					</div>
+					<div style="float:left; width:12px; height:1px"></div>
+					<!-- Produs 3 -->
+					<div class="produs_home">
+						<br>
+						<a href="#" title="detalii Tub LED 120cm" style="position:relative; display:block"
+							onclick="schimbaLab('laborator6','meniu_laborator6')">
+							<img src="imagini/produse/tub_led.jpg" class="poza_produs" alt="">
+							<div class="discount">-33<span>%</span></div>
+							<div class="star_putere_promo">
+								<div style="margin:14px auto; font-size:22px; color:#FFF">20w</div>
+							</div>
+						</a>
+						<h4>Tub LED 120cm</h4>
+						220V <span class="negru">&nbsp;/&nbsp;</span>
+						20 W <span class="negru">&nbsp;/&nbsp;</span>
+						1800 lm
+						<a class="buton_despre" href="#" title="detalii Tub LED 120cm" style="background-color:#CC0000"
+							onclick="schimbaLab('laborator6','meniu_laborator6')">
+							<span>detalii produs</span>
+						</a>
+						<div style="float:right; margin:15px 5px 0 0; ">
+							<div class="pret_intreg">28.04 lei</div>
+							<div class="pret_redus" title="pret CU tva" style="color:#CC0000">21,09 lei</div>
+						</div>
+					</div>
+				</div>
+
+
+				<hr style="border:0; height:1px; background:#CCC;">
+
+				<div class="meniu_contact">
+					<ul>
+						<li><a href="#" onclick="schimbaLab('laborator4','meniu_laborator4');">Informatii Utile</a></li>
+						<li><a href="#" onclick="schimbaLab('laborator3','meniu_laborator3');">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- Laborator 2 -->
+			<div class="laborator" id="laborator2" style="display:none; margin-top: 20px;">
+				<!-- coloana stanga -->
+				<div style="float:left; width:45%; position:relative;">
+					<!-- tabel specificatii -->
+					<fieldset>
+						<legend style="font-size: 15px;">Informatii tehnice Lustra LED</legend>
+						<table class="tabel_specificatii">
+							<tr>
+								<th>Tensiune</th>
+								<td>220V</td>
+							</tr>
+							<tr>
+								<th>Putere</th>
+								<td>200 W</td>
+							</tr>
+							<tr>
+								<th>Tip Lustra</th>
+								<td>LED</td>
+							</tr>
+							<tr>
+								<th>Putere</th>
+								<td>2 x 100W</td>
+							</tr>
+							<tr>
+								<th>Tip Montaj</th>
+								<td>Tavan</td>
+							</tr>
+							<tr>
+								<th rowspan="3">Culoare Lumina</th>
+								<td>Alb Rece</td>
+							</tr>
+							<tr>
+								<td>Alb Natural</td>
+							</tr>
+							<tr>
+								<td>Alb Cald</td>
+							</tr>
+							<tr>
+								<th rowspan="3">Temperatura Culoare</th>
+								<td>3500K</td>
+							</tr>
+							<tr>
+								<td>4500K</td>
+							</tr>
+							<tr>
+								<td>6500K</td>
+							</tr>
+							<tr>
+								<th>Flux Luminos</th>
+								<td>13000 lm</td>
+							</tr>
+							<tr>
+								<th>Garantie</th>
+								<td>1 an</td>
+							</tr>
+						</table>
+					</fieldset>
+
+				</div>
+				<!-- coloana dreapta -->
+				<div style="float:right; width:50%;">
+
+					<!--poza produs  -->
+					<div style="position:relative; display:block; border: 1px solid silver;">
+						<img itemprop="image" src="imagini/produse/lustra.jpg" class="poza_produs" alt="">
+						<div style="float:right; width: 105px; margin-top: 20px;">
+							<img src="imagini/eticheta_energetica.gif" alt="eticheta energetica"
+								style="width:104px; height:135px;">
+						</div>
+					</div>
+
+					<!-- fieldset pret -->
+					<div style="margin:15px 0 0 0; width:97%; border:1px solid silver; color:rgb(90, 44, 44); padding:1.5% 1.5%;  bottom:0">
+
+						<!-- Formular Comanda -->
+						<form method="post" action="#" name="comanda_prod"
+							onsubmit="return adaugaInCos(this.getElementsByClassName('produs'));" style="height:150px">
+							<!-- alerta cantitate -->
+							<div
+								style="font-size:15px; line-height:12px; margin-bottom:5px; text-align:center; color: #CC0000;">
+								Va rugam selectati cantitatea!
+							</div></br>
+							<!-- dropdown cantitate -->
+							<select name="cantitate" class="produs" style=" width:37%;text-align: center;"
+								title="Specificati Cantitatea Dorita">
+								<option value="1" selected>1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+							</select>
+							<br>
+							<!-- buton adauga in cos -->
+							<div style="float:left">
+								<input class="buton_adauga_produs" name="adauga_Produs" type="submit" value="Adauga in cos"
+									title="Adauga in cos!">
+							</div>
+							<!-- pret -->
+							<div style="float:right; margin:0 0 0 5px">
+								<div style="float:right; margin:15px 5px 0 0; ">
+									<div class="pret_intreg">720,99 lei</div>
+									<div class="pret_redus" title="pret CU tva" style="color:#CC0000">616.23 lei</div>
+								</div>
+							</div>
+							<!-- valori pentru postare -->
+
+							<input type="hidden" class="produs" name="id" value="1">
+							<input type="hidden" class="produs" name="nume_produs" value="Lustra LED">
+							<input type="hidden" class="produs" name="pret" value="616.23">
+						</form>
+					</div>
+
+					<!-- fieldset contact/sesizari -->
+					<fieldset>
+						<legend>Contact</legend>
+						<div style="width:100%;  text-align:center;">
+							<div>
+								comanda telefonica : 123456789
+							</div>
+							<div>
+								support tehnic: 123456789
+							</div>
+							<div>
+								sesizari:123456789
+							</div>
+						</div>
+					</fieldset>
+				</div>
+			</div>
+			<!-- Laborator 3 -->
+			<div class="laborator" id="laborator3" style="display:none">
+				<!-- formular de contact -->
+				<fieldset>
+					<legend style="font-size: 15px;">Contact</legend>
+					<div class="container_contact">
+						<form action="mailto:contact@exemplu_magazin.ro" method="post" enctype="text/plain">
+
+							<label for="nume">Nume</label>
+							<input type="text" id="nume" name="nume_client" placeholder="Introduceti numele.." required>
+
+							<label for="prenume">Prenume</label>
+							<input type="text" id="prenume" name="lastname" placeholder="Introduceti prenumele.."
+								required>
+
+							<label for="email">Email</label>
+							<input type="email" id="email" name="email" placeholder="Introduceti email-ul.." required>
+
+							<label for="comentariu">Comentariu</label>
+							<textarea id="comentariu" name="comentariu" placeholder="Comentariu.." style="height:150px"
+								required></textarea>
+
+							<input type="submit" value="Trimite">
+						</form>
+					</div>
+				</fieldset>
+			</div>
+			<!-- Laborator 4 -->
+			<div class="laborator" id="laborator4" style="display:none; height: 500px;">
+				<div class="meniu_frame">
+					<ul>
+						<li><a href="https://ro.wikipedia.org/wiki/LED" target="cadru_laborator4">Tehnologia LED</a>
+						</li>
+						<li><a href="https://www.calculat.org/ro/energie-combustibil/consum-energie-electrica.html"
+								target="cadru_laborator4">Calculator Consum Energie</a></li>
+						<li><a href="https://anpc.ro/" target="cadru_laborator4">ANPC</a></li>
+					</ul>
+				</div>
+				<div id="informatii_frame">
+					<iframe name="cadru_laborator4" src="https://ro.wikipedia.org/wiki/LED" width="99.4%" height="100%"
+						border="3" align="right"></iframe>
+				</div>
+			</div>
+			<!-- Laborator 5 -->
+			<div class="laborator" id="laborator5" style="display:none">
+				<!-- coloana stanga -->
+				<div style="float:left; width:45%; position:relative;">
+					<!-- tabel specificatii -->
+					<fieldset >
+						<legend >Informatii tehnice Bec LED 12W</legend>
+						<table class="tabel_specificatii tabel_lab_5">
+							<tr>
+								<th>Tensiune</th>
+								<td>220V</td>
+							</tr>
+							<tr>
+								<th>Putere</th>
+								<td>12 W</td>
+							</tr>
+							<tr>
+								<th>Luminozitate</th>
+								<td>1200 lm</td>
+							</tr>
+							<tr>
+								<th>Iluminare </th>
+								<td>360 grade</td>
+							</tr>
+							<tr>
+								<th>Dispersor </th>
+								<td>clar</td>
+							</tr>
+							<tr>
+								<th>Eficienta (lm/W)  </th>
+								<td>105</td>
+							</tr>
+							<tr>
+								<th>Dimensiuni </th>
+								<td>5 x 14</td>
+							</tr>
+							<tr>
+								<th>Dimabil</th>
+								<td>Nu</td>
+							</tr>
+							<tr>
+								<th>Durata medie de viata</th>
+								<td>10-15.000 ore</td>
+							</tr>
+							<tr>
+								<th>Garantie</th>
+								<td>2 ani</td>
+							</tr>
+						</table>
+					</fieldset>
+
+				</div>
+				<!-- coloana dreapta -->
+				<div style="float:right; width:50%;">
+
+					<!--poza produs  -->
+					<div style="position:relative; display:block; border: 1px solid silver;">
+						<img itemprop="image" src="imagini/produse/bec.jpg" class="poza_produs" alt="">
+						<div style="float:right; width: 105px; margin-top: 20px;">
+							<img src="imagini/eticheta_energetica_bec.gif" alt="eticheta energetica"
+								style="width:104px; height:135px;">
+						</div>
+					</div>
+
+					<!-- fieldset pret -->
+					<div style="margin:15px 0 0 0; width:97%; border:1px solid silver; color:rgb(90, 44, 44); padding:1.5% 1.5%;  bottom:0">
+
+						<!-- Formular Comanda -->
+						<form method="post" action="#" name="comanda_prod"
+							onsubmit="return adaugaInCos(this.getElementsByClassName('produs'));" style="height:150px">
+							<!-- alerta cantitate -->
+							<div
+								style="font-size:15px; line-height:12px; margin-bottom:5px; text-align:center; color: #CC0000;">
+								Va rugam selectati cantitatea!
+							</div></br>
+							<!-- dropdown cantitate -->
+							<select name="cantitate" class="produs" style=" width:37%;text-align: center;"
+								title="Specificati Cantitatea Dorita">
+								<option value="1" selected>1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+							</select>
+							<br>
+							<!-- buton adauga in cos -->
+							<div style="float:left">
+								<input class="buton_adauga_produs" name="adauga_Produs" type="submit" value="Adauga in cos"
+									title="Adauga in cos!">
+							</div>
+							<!-- pret -->
+							<div style="float:right; margin:0 0 0 5px">
+								<div style="float:right; margin:15px 5px 0 0; ">
+									<div class="pret_intreg">34.25 lei</div>
+									<div class="pret_redus" title="pret CU tva" style="color:#CC0000">26,15 lei</div>
+								</div>
+							</div>
+							<!-- valori pentru postare -->
+							<input type="hidden" class="produs" name="id" value="2">
+							<input type="hidden" class="produs" name="nume_produs" value="Bec LED">
+							<input type="hidden" class="produs" name="pret" value="26,15">
+						</form>
+					</div>
+
+					<!-- fieldset contact/sesizari -->
+					<fieldset>
+						<legend>Contact</legend>
+						<div style="width:100%;  text-align:center;">
+							<div>
+								comanda telefonica : 123456789
+							</div>
+							<div>
+								support tehnic: 123456789
+							</div>
+							<div>
+								sesizari:123456789
+							</div>
+						</div>
+					</fieldset>
+				</div>
+			</div>
+			<!-- Laborator 6 -->
+			<div class="laborator" id="laborator6" style="display:none">
+				<!-- coloana stanga -->
+				<div style="float:left; width:45%; position:relative;">
+					<!-- tabel specificatii -->
+					<fieldset id="lab6_fieldset">
+						<legend style="font-size: 15px;">Informatii tehnice Lustra LED</legend>
+						<table class="tabel_specificatii">
+							<tr>
+								<th>Tensiune</th>
+								<td>220V</td>
+							</tr>
+							<tr>
+								<th>Putere</th>
+								<td>20 W</td>
+							</tr>
+							<tr>
+								<th>Luminozitate</th>
+								<td>1800 lm</td>
+							</tr>
+							<tr>
+								<th>Iluminare </th>
+								<td>260 grade</td>
+							</tr>
+							<tr>
+								<th>Dimensiuni </th>
+								<td>120 cm</td>
+							</tr>
+							<tr>
+								<th>Dimabil</th>
+								<td>Nu</td>
+							</tr>
+							<tr>
+								<th>Durata medie de viata</th>
+								<td>5-10.000 ore</td>
+							</tr>
+							<tr>
+								<th>Garantie</th>
+								<td>2 ani</td>
+							</tr>
+						</table>
+					</fieldset>
+
+				</div>
+				<!-- coloana dreapta -->
+				<div style="float:right; width:50%;">
+
+					<!--poza produs  -->
+					<div class="lab6_shadow lab6_imagini_prod" style="position:relative; display:block; border: 1px solid silver;">
+						<img itemprop="image" src="imagini/produse/tub_led.jpg" class="poza_produs" alt="">
+						<div style="float:right; width: 105px; margin-top: 20px;">
+							<img src="imagini/eticheta_energetica_tub.gif" alt="eticheta energetica"
+								style="width:104px; height:135px;">
+						</div>
+					</div>
+
+					<!-- fieldset pret -->
+					<div class = "lab6_shadow lab6_formular_comanda" style="margin:15px 15px 15px 0; width:97%; border:1px solid silver; color:rgb(90, 44, 44); padding:1.5% 1.5%;  bottom:0">
+
+						<!-- Formular Comanda -->
+						<form method="post" action="#" name="comanda_prod"
+							onsubmit="return adaugaInCos(this.getElementsByClassName('produs'));" style="height:150px">
+							<!-- alerta cantitate -->
+							<div
+								style="font-size:15px; line-height:12px; margin-bottom:5px; text-align:center; color: #CC0000;">
+								Va rugam selectati cantitatea!
+							</div></br>
+							<!-- dropdown cantitate -->
+							<select name="cantitate" class="produs"  style=" width:37%;text-align: center;"
+								title="Specificati Cantitatea Dorita">
+								<option value="1" selected>1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+							</select>
+							<br>
+							<!-- buton adauga in cos -->
+							<div style="float:left">
+								<input class="buton_adauga_produs" name="adauga_Produs" type="submit" value="Adauga in cos"
+									title="Adauga in cos!">
+							</div>
+							<!-- pret -->
+							<div style="float:right; margin:0 0 0 5px">
+								<div style="float:right; margin:15px 5px 0 0; ">
+									<div class="pret_intreg">28.04 lei</div>
+									<div class="pret_redus" title="pret CU tva" style="color:#CC0000">21,09 lei</div>
+								</div>
+							</div>
+							<!-- valori pentru postare -->
+							<input type="hidden" class="produs" name="id" value="3">
+							<input type="hidden" class="produs" name="nume_produs" value="Tub LED">
+							<input type="hidden" class="produs" name="pret" value="21,09">
+						</form>
+					</div>
+
+					<!-- fieldset contact/sesizari -->
+					<fieldset class="lab6_shadow lab6_contact">
+						<legend>Contact</legend>
+						<div style="width:100%;  text-align:center;">
+							<div>
+								comanda telefonica : 123456789
+							</div>
+							<div>
+								support tehnic: 123456789
+							</div>
+							<div>
+								sesizari:123456789
+							</div>
+						</div>
+					</fieldset>
+				</div>
+			</div>
+			<!-- Laborator 7 -->
+			<div class="laborator" id="laborator7" style="display:none">
+				<table id="tabel_cos">
+					<thead>
+						<tr>
+							<th>Produs</th>
+							<th>Cantitate</th>
+							<th>Pret</th>
+						</tr>
+					</thead>
+					<tbody id="body_tabel_cos">
+
+					</tbody>
+				</table>
+				<div id="container_butoane_cos">
+					<button id="buton_calculeaza_cos" onclick = "calculeazaTotalCos()" type="button" >Calculeaza Total</button>
+					<button id="buton_sterge_cos" onclick = "golesteCos()" type="button" >Goleste Cos</button>
+					
+				</div></br>
+				<div style="text-align:center">
+					<h3 style="color: rgb(73, 73, 73);padding: 10px;" id="total_produse_calculate"></h3>
+				</div>
+			</div>
+			<!-- Laborator 8 -->
+			<div class="laborator" id="laborator8" style="display:none">
+				<!-- Text Oferta -->
+				<div class="continut_oferta">
+					<div style="float:left; width:160px; height:110px; text-align:center; ">
+						<div style="font-size:32px; line-height:32px; color:#CC0000">OFERTA SPECIALA!</div>
+						<div style="margin:10px 0 0 0; font-size:22px;">au mai ramas:</div>
+					</div>
+					<!-- Elemente timer -->
+					<div id="countdown_dashboard" style="float:left; width:530px;">
+						<!-- zile -->
+						<div class="dash zile_dash">
+							<span class="dash_title">zile</span>
+							<div class="digit"></div>
+						</div>
+						<!-- ore -->
+						<div class="dash ore_dash">
+							<span class="dash_title">ore</span>
+							<div class="digit"></div>
+						</div>
+						<!-- minute -->
+						<div class="dash minute_dash">
+							<span class="dash_title">minute</span>
+							<div class="digit"></div>
+						</div>
+						<!-- secunde -->
+						<div class="dash secunde_dash">
+							<span class="dash_title">secunde</span>
+							<div class="digit"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Laborator 9 -->
+			<div class="laborator" id="laborator9" style="display:none">
+				<?php
+					date_default_timezone_set("Europe/Bucharest");
+					echo "Data: ". date("d//m/Y") . "<br>";
+					echo "Ora: " . date("H:i:s");
+				?>
+			</div>
+			<!-- Laborator 10 -->
+			<div class="laborator" id="laborator10" style="display:none">
+				lab 10
+			</div>
+			<!-- Laborator 11 -->
+			<div class="laborator" id="laborator11" style="display:none">
+				lab 11
+			</div>
+			<!-- Laborator 12 -->
+			<div class="laborator" id="laborator12" style="display:none">
+				lab 12
+			</div>
+		</div>
+
+		<div class="footer">
+			<h3>
+				Made by  Ilie Claudiu Teofil (Anul 2, Grupa 203)
+			</h3>
+		</div>
+
+	</div>
+	<!-- scripturi control -->
+	<script type="text/javascript" src="js/laboratoare.js"></script>
+	<script type="text/javascript" src="js/oferta.js"></script>
+	<script type="text/javascript" src="js/cos_cumparaturi.js"></script>
+</body>
+
+</html>
